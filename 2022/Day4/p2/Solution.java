@@ -39,11 +39,9 @@ public class Solution {
     int[] range2 = new int[] { Integer.parseInt(r2[0]), Integer.parseInt(r2[1]) };
 
     int upperRangeStart = range1[0];
-    int[] upperRange = range1;
     int[] lowerRange = range2;
     if (range2[0] > range1[0]) {
       upperRangeStart = range2[0];
-      upperRange = range2;
       lowerRange = range1;
     }
     return lowerRange[0] <= upperRangeStart && upperRangeStart <= lowerRange[1];
